@@ -1,0 +1,3 @@
+The course asks that I send the sentence, which is "Practicando sentencias usando el programa Node.js" and the username "manue"
+
+Linea adicional que escribi para practicar otro metodo de exportacion hacia el archivo text practice2.txt
