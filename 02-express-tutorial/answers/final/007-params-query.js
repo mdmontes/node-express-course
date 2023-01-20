@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const {products} = require('./data');
+const {products} = require('../data');
 
 //1. Basic express query to display Products Json data on home page
 // app.get('/',(req,res)=>{

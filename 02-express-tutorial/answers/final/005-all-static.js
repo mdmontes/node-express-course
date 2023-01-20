@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-app.use(express.static('./Public'));
+app.use(express.static(path.resolve(__dirname,'../Public')));
 
 // Moved the Index.html file into the Public file since its also static...
 // app.get('/',(req,res)=>{
