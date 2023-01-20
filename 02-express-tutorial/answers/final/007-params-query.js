@@ -14,8 +14,8 @@ app.get('/', (req, res) => {
 
 //3 Express query to display SOME JSON data for all products, and not all of the data for that product (i.e, not the 'description')
 app.get('/api/products',(req, res)=>{
-    const newProducts = products.map((p)=>{
-        const{id, name, image} = p;
+    const newProducts = products.map((producto)=>{
+        const{id, name, image} = producto;
         return{id, name, image}
     })
     res.json(newProducts)
