@@ -1,6 +1,9 @@
 const express = require('express');
 app = express()
 
+const {myLogger} = require('./final/practicemiddleware.js')
+
+app.use(myLogger)
 app.use(express.static('./New-Public'))
 
 app.get('/sample',(req,res)=>{
