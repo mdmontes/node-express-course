@@ -1,0 +1,20 @@
+1.	Quickly explain how middleware is used in an Express application.
+
+There are various ways to incorporate middleware into an Express application. Fundamentally, however, middleware are functions that can access the objects “req”, “res”, and “next”. Upon execution of the function “next()”, the code will request that any later middleware be executed. Middleware functions can be accesses through Express by either A) using the “app.use” function i.e “app.use(middleware)” or B) referencing them after the “path” within an express function i.e “app.get(‘/’,middleware,(req,res)=>{res.send(‘xys’)})”
+
+2.	What does CRUD stand for?
+
+CRUD stands for CREATE, READ, UPDATE, DELETE.
+
+3.	You are careful to store your sensitive information in a .env file.
+
+    a.	How do you get your app to access the information in the .env file?
+    In order to access the file you need to make sure that:
+    
+        1.	You have downloaded the npm package “dotenv”, and that it is visible in the package.json file
+        2.	In the specific JS file where we intend to call the sensitive information (“which should have been stored in a variable”, that the file has the command “require(‘dotenv’)/config” written at the top of the file
+         3.	When getting ready to access the environmental variable within a function (such as the connectDB) function, the following command needs to be written: “process.env.<env_variable>”
+
+    b.	How do you protect the contents of the .env file so that it is not stored in your github repository?
+    
+        To prevent the contents of the env file from going into the github repository, we need to make sure that “.env” is written in the .gitignore file. Theoretically, no .env data should make it to github upon performing a push request. However, to be extra careful, it is best to also include it in the .gitignore file
