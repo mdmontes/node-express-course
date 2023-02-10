@@ -1,6 +1,6 @@
 const {CustomAPIError} = require('../custom-error/custom-error')
 
-const errorHandlerMiddleware = (err,req, res, next) =>{
+const errorHandler = (err,req, res, next) =>{
     // return res.status(500).json({msg:err})
     // console log coming from controller/tasks_2.js
     // console.log(err)
@@ -12,9 +12,6 @@ const errorHandlerMiddleware = (err,req, res, next) =>{
     }
     return res.status(500).json({msg:`Something went wrong, try again`})
 
-
-
-
 }
 
-module.exports = errorHandlerMiddleware
+module.exports = errorHandler

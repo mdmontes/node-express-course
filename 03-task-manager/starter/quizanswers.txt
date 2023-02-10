@@ -17,4 +17,4 @@ CRUD stands for CREATE, READ, UPDATE, DELETE.
 
     b.	How do you protect the contents of the .env file so that it is not stored in your github repository?
     
-        To prevent the contents of the env file from going into the github repository, we need to make sure that “.env” is written in the .gitignore file. Theoretically, no .env data should make it to github upon performing a push request. However, to be extra careful, it is best to also include it in the .gitignore file
+        To prevent the contents of the env file from going into the github repository, we need to make sure that “.env” is written in the .gitignore file.
