@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {getAllTasks, getTask, createTask, updateTask, deleteTask, editTask} =require('../controller/tasks_2')
+const {getAllTasks, getTask, createTask, updateTask, deleteTask, editTask} =require('../controller/tasks-2')
 
 // *** ROUTE is replicating all the request functions below
 //app.get('/api/v1/tasks')          -get all the tasks
